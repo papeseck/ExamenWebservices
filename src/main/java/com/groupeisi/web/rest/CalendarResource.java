@@ -35,6 +35,5 @@ public class CalendarResource {
             this.date = date;
             this.dayOfWeek = dayOfWeek;
         }
-        // Getters et setters
     }
 }
