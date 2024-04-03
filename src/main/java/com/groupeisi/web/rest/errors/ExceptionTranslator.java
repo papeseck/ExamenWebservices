@@ -49,7 +49,7 @@ public class ExceptionTranslator extends ResponseEntityExceptionHandler {
     private static final boolean CASUAL_CHAIN_ENABLED = false;
 
     @Value("${jhipster.clientApp.name}")
-    private String applicationName;
+    private String WebSer;
 
     private final Environment env;
 
@@ -215,7 +215,7 @@ public class ExceptionTranslator extends ResponseEntityExceptionHandler {
     private HttpHeaders buildHeaders(Throwable err) {
         return err instanceof BadRequestAlertException badRequestAlertException
             ? HeaderUtil.createFailureAlert(
-                applicationName,
+                WebSer,
                 true,
                 badRequestAlertException.getEntityName(),
                 badRequestAlertException.getErrorKey(),
